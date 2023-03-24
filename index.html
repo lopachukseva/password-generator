@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/psw-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
     <title>Password generator</title>
 </head>
 
@@ -16,11 +16,11 @@
 
         <div class="password-generator">
             <div class="screen-button">
-                <div class="generate-button">
-
-                </div>
                 <div class="password-screen">
                     <p>6jK3PqGd</p>
+                </div>
+                <div class="generate-button">
+                    <p>GENERATE!</p>
                 </div>
             </div>
             <div class="symbol-options">
@@ -29,29 +29,28 @@
                         <p>Password length:</p>
                         <p class="count">8</p>
                     </div>
-                    
                     <div class="range-slider">
                         <input type="range" min="6" max="20" value="8" name="range" step="1">
                     </div>
                 </div>
                 <div class="checkbox-options">
-                    <div class="checkbox">
-                        <input type="checkbox" id="switch1"/>
+                    <div class="checkbox f1">
+                        <input type="checkbox" id="switch1" checked />
                         <label for="switch1"></label>
                         <span>Numbers</span>
                     </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="switch2"/>
+                    <div class="checkbox f2">
+                        <input type="checkbox" id="switch2" />
                         <label for="switch2"></label>
                         <span>Symbols</span>
                     </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="switch3"/>
+                    <div class="checkbox f3">
+                        <input type="checkbox" id="switch3" checked />
                         <label for="switch3"></label>
                         <span>Uppercase</span>
                     </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="switch4"/>
+                    <div class="checkbox f4">
+                        <input type="checkbox" id="switch4" checked />
                         <label for="switch4"></label>
                         <span>Lowercase</span>
                     </div>
@@ -60,7 +59,7 @@
 
 
         </div>
-        
+
     </wrapper>
 </body>
 

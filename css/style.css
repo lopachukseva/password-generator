@@ -12,7 +12,7 @@
 .password-generator {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 0px;
 }
 
 .screen-button {
@@ -20,7 +20,6 @@
     width: 300px;
     height: 300px;
     border-radius: 150px;
-    /* border: 1px solid black; */
 }
 
 .symbol-options {
@@ -29,11 +28,12 @@
 }
 
 .symbols-count {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
     width: 300px;
     height: 120px;
+    padding-left: 25px;
 }
 
 .symbols-count-label {
@@ -44,6 +44,7 @@
     margin-top: 55px;
     margin-left: 20px;
     margin-bottom: 0px;
+    user-select: none;
 }
 
 .symbols-count-label .count {
@@ -51,7 +52,6 @@
 }
 
 .checkbox-options {
-    /* border: 1px solid black; */
     width: 300px;
     height: 180px;
 }
@@ -59,10 +59,17 @@
 .generate-button {
     box-sizing: border-box;
     background-color: #ff4900;
-    /* border: 1px solid black; */
     width: 300px;
     height: 150px;
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    box-shadow: 0px 0px 0px 5px #db4003 inset;
+    padding: 50px;
+    user-select: none;
+}
+
+.generate-button p {
+    text-align: center;
+    font-size: 2.1em;
 }
 
 .generate-button:hover {
@@ -76,11 +83,10 @@
 .password-screen {
     box-sizing: border-box;
     background-color: #FF9200;
-    /* border: 1px solid black; */
     width: 300px;
     height: 150px;
-    border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    padding: 35px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    padding: 70px;
 }
 
 .password-screen p {
@@ -98,6 +104,23 @@
 .checkbox span {
     padding-left: 30px;
     font-size: 1.2em;
+    user-select: none;
+}
+
+.f1 {
+    padding-left: 30px;
+}
+
+.f2 {
+    padding-left: 28px;
+}
+
+.f3 {
+    padding-left: 20px;
+}
+
+.f4 {
+    padding-left: 6px;
 }
 
 
@@ -188,7 +211,8 @@ label:active:after {
 .range-slider input[type=range]::-moz-range-track {
     border-radius: 5px;
     height: 10px;
-    background-color: rgb(158, 156, 156);;
+    background-color: rgb(158, 156, 156);
+    ;
 }
 
 .range-slider input[type=range]::-moz-range-thumb {
