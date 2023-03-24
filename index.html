@@ -25,10 +25,13 @@
             </div>
             <div class="symbol-options">
                 <div class="symbols-count">
-                    <p>Password length</p>
+                    <div class="symbols-count-label">
+                        <p>Password length:</p>
+                        <p class="count">8</p>
+                    </div>
+                    
                     <div class="range-slider">
-                        <input type="range" value="8">
-                        <p>8</p>
+                        <input type="range" min="6" max="20" value="8" name="range" step="1">
                     </div>
                 </div>
                 <div class="checkbox-options">
@@ -57,41 +60,6 @@
 
 
         </div>
-        <!-- <div class="password-output">
-            <p class="pasword-field">6jK3PqGd</p>
-        </div>
-
-        <div class="symbol-input-wrapper">
-
-        <div class="symbol-input">
-            <input type="checkbox" class="symbol-type-chb" id="numbers">
-            <label for="numbers">Цифры</label>
-        </div>
-
-        <div class="symbol-input">
-            <input type="checkbox" class="symbol-type-chb" id="lowercase">
-            <label for="lowercase">Прописные буквы</label>
-        </div>
-
-        <div class="symbol-input">
-            <input type="checkbox" class="symbol-type-chb" id="uppercase">
-            <label for="uppercase">Строчные буквы</label>
-        </div>
-
-        <div class="symbol-input">
-            <input type="checkbox" class="symbol-type-chb" id="specialVars">
-            <label for="specialVars">Специальные символы</label>
-        </div>
-
-        <div class="symbol-input">
-            <input type="number" class="symbol-len" id="symbolLength" placeholder="Количество символов" value="6">
-        </div>
-
-        </div>
-
-        <div class="symbol-input">
-            <button type="button" class="generate-button">GENERATE</button>
-        </div> -->
         
     </wrapper>
 </body>
