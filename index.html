@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/psw-icon.png" type="image/x-icon">
+    <title>Password generator</title>
+</head>
+
+<body>
+    <wrapper class="wrapper">
+        <div class="password-output">
+            <p class="pasword-field">6jK3PqGd</p>
+        </div>
+
+        <div class="symbol-input-wrapper">
+
+        <div class="symbol-input">
+            <input type="checkbox" class="symbol-type-chb" id="numbers">
+            <label for="numbers">Цифры</label>
+        </div>
+
+        <div class="symbol-input">
+            <input type="checkbox" class="symbol-type-chb" id="lowercase">
+            <label for="lowercase">Прописные буквы</label>
+        </div>
+
+        <div class="symbol-input">
+            <input type="checkbox" class="symbol-type-chb" id="uppercase">
+            <label for="uppercase">Строчные буквы</label>
+        </div>
+
+        <div class="symbol-input">
+            <input type="checkbox" class="symbol-type-chb" id="specialVars">
+            <label for="specialVars">Специальные символы</label>
+        </div>
+
+        <div class="symbol-input">
+            <input type="number" class="symbol-len" id="symbolLength" placeholder="Количество символов" value="6">
+        </div>
+
+        </div>
+
+        <div class="symbol-input">
+            <button type="button" class="generate-button">GENERATE</button>
+        </div>
+        
+    </wrapper>
+</body>
+
+</html>
