@@ -9,6 +9,11 @@
     height: 100vh;
 }
 
+.pg-label {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
 .password-generator {
     display: flex;
     flex-direction: row;
@@ -30,10 +35,12 @@
 .symbols-count {
     box-sizing: border-box;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    width: 300px;
-    height: 120px;
-    padding-left: 25px;
+    width: 230px;
+    padding-left: 34px;
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
 
 .symbols-count-label {
@@ -41,18 +48,17 @@
     flex-direction: row;
     font-size: 1.2em;
     align-self: left;
-    margin-top: 55px;
-    margin-left: 20px;
-    margin-bottom: 0px;
+    margin-left: 5px;
     user-select: none;
+    justify-content: space-between;
 }
 
 .symbols-count-label .count {
-    margin-left: 50px;
+    padding-right: 5px;
 }
 
 .checkbox-options {
-    width: 300px;
+    width: 230px;
     height: 180px;
 }
 
@@ -62,7 +68,7 @@
     width: 300px;
     height: 150px;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    box-shadow: 0px 0px 0px 5px #db4003 inset;
+    box-shadow: 0px 0px 0px 12px #FF9200 inset;
     padding: 50px;
     user-select: none;
 }
@@ -86,7 +92,7 @@
     width: 300px;
     height: 150px;
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-    padding: 70px;
+    padding: 70px 0px;
 }
 
 .password-screen p {
@@ -98,29 +104,33 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
 }
 
 .checkbox span {
-    padding-left: 30px;
     font-size: 1.2em;
+    text-align: right;
+    line-height: 25px;
     user-select: none;
+    width: 100px;
+    padding-right: 5px;
 }
 
 .f1 {
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .f2 {
-    padding-left: 28px;
+    padding-left: 40px;
 }
 
 .f3 {
-    padding-left: 20px;
+    padding-left: 27px;
 }
 
 .f4 {
-    padding-left: 6px;
+    padding-left: 2px;
 }
 
 
@@ -137,7 +147,7 @@ label {
     text-indent: -9999px;
     width: 50px;
     height: 26px;
-    background: rgb(158, 156, 156);
+    background: #FF9200;
     display: block;
     border-radius: 100px;
     position: relative;
@@ -156,7 +166,8 @@ label:after {
 }
 
 input:checked+label {
-    background: #0b61a4;
+    background: #ff4900;
+
 }
 
 input:checked+label:after {
@@ -175,7 +186,8 @@ label:active:after {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px 15px;
+    margin: 0px 4px;
+    margin-top: 10px;
 }
 
 .range-slider p {
@@ -184,7 +196,7 @@ label:active:after {
 }
 
 .range-slider input[type=range] {
-    width: 200px;
+    width: 100%;
     height: 20px;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -194,12 +206,12 @@ label:active:after {
 .range-slider input[type=range]::-webkit-slider-runnable-track {
     border-radius: 5px;
     height: 10px;
-    background-color: rgb(158, 156, 156);
+    background-color: #FF9200;
 }
 
 .range-slider input[type=range]::-webkit-slider-thumb {
     background: white;
-    border: 2px solid #0b61a4;
+    border: 2px solid #ff4900;
     border-radius: 10px;
     cursor: pointer;
     width: 20px;
@@ -211,13 +223,12 @@ label:active:after {
 .range-slider input[type=range]::-moz-range-track {
     border-radius: 5px;
     height: 10px;
-    background-color: rgb(158, 156, 156);
-    ;
+    background-color: #FF9200;
 }
 
 .range-slider input[type=range]::-moz-range-thumb {
     background: white;
-    border: 1px solid #0b61a4;
+    border: 2px solid #ff4900;
     border-radius: 10px;
     cursor: pointer;
 }

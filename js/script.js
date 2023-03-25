@@ -37,6 +37,7 @@ function generatePassword() {
     if (lowSwitchCheck === true) {
         passwordSymbols = passwordSymbols.concat(low);
     }
+
     passwordSymbols.sort(compareRandom);
     length = passwordLengthScreen.textContent;
     console.log(length);
@@ -46,11 +47,11 @@ function generatePassword() {
         result += passwordSymbols[i];
     }
 
-    
+
     return result;
 };
 
-function compareRandom (a, b) {
+function compareRandom(a, b) {
     return Math.random() - 0.5;
 }
 
