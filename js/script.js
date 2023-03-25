@@ -3,13 +3,14 @@ symSwitch = document.getElementById('switch2');
 uppSwitch = document.getElementById('switch3');
 lowSwitch = document.getElementById('switch4');
 rangeSlider = document.getElementById('len-slider');
-
 passScreen = document.querySelector('.password-screen p');
 genButton = document.querySelector('.generate-button');
-
-
 passwordLengthScreen = document.querySelector('.symbols-count-label .count');
+passwordScreenButton = document.querySelector('.password-screen');
 
+passwordScreenButton.addEventListener("click", () => {
+    navigator.clipboard.writeText(passScreen.textContent);
+});
 
 function generatePassword() {
     return 'something';

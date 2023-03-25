@@ -23,14 +23,14 @@
                     <p>GENERATE!</p>
                 </div>
             </div>
-            <div class="symbol-options">
+            <form class="symbol-options">
                 <div class="symbols-count">
                     <div class="symbols-count-label">
                         <p>Password length:</p>
                         <p class="count">8</p>
                     </div>
                     <div class="range-slider">
-                        <input type="range" min="6" max="20" value="8" name="range" step="1">
+                        <input type="range" id="len-slider" min="6" max="20" value="8" name="range" step="1">
                     </div>
                 </div>
                 <div class="checkbox-options">
@@ -55,12 +55,13 @@
                         <span>Lowercase</span>
                     </div>
                 </div>
-            </div>
+            </form>
 
 
         </div>
 
     </wrapper>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
