@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(244, 226, 192);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .pg-label {
@@ -16,21 +16,20 @@
 }
 
 .alert-label {
-    margin: 30px;
+    margin-top: 15px;
     border: 2px solid #ff4900;
     border-radius: 20px;
     background-color: #FF9200;
-    padding: 10px 30px;
-    position: absolute;
-    top: 570px;
+    padding: 6px 30px;
     visibility: hidden;
 }
 
 .show-element {
-    visibility:visible;
+    visibility: visible;
 }
 
 .alert-label p {
+    height: 20px;
     color: white;
     text-shadow: 0px 0px 1px rgb(108, 108, 108);
 }
@@ -259,3 +258,71 @@ label:active:after {
 
 
 /* --- responsive --- */
+
+@media screen and (max-width: 700px) {
+    .f1 {
+        padding-left: 0px;
+    }
+
+    .f2 {
+        padding-left: 0px;
+    }
+
+    .f3 {
+        padding-left: 0px;
+    }
+
+    .f4 {
+        padding-left: 0px;
+    }
+
+    .password-generator {
+        flex-direction: column;
+    }
+
+    .symbol-options {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .symbols-count {
+        padding-left: 0px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+
+    .checkbox-options {
+        width: inherit;
+        height: inherit;
+    }
+
+    .pg-label {
+        font-size: 2em;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .screen-button {
+        width: 260px;
+        height: 260px;
+        border-radius: 130px;
+    }
+
+    .generate-button {
+        width: 260px;
+        height: 130px;
+        padding: 30px;
+    }
+
+    .password-screen {
+        width: 260px;
+        height: 130px;
+        padding: 60px 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pg-label {
+        font-size: 1.6em;
+    }
+}
