@@ -17,17 +17,10 @@ const passwordScreenButton = document.querySelector('.password-screen');
 const alertElement = document.querySelector('.alert-label');
 const alertElementLabel = document.querySelector('.alert-label p');
 
-// let numSwitchCheck = true;
-// let symSwitchCheck = false;
-// let uppSwitchCheck = true;
-// let lowSwitchCheck = true;
-
 let numSwitchCheck = numSwitch.checked;
 let symSwitchCheck = symSwitch.checked;
 let uppSwitchCheck = uppSwitch.checked;
 let lowSwitchCheck = lowSwitch.checked;
-
-console.log(numSwitchCheck, symSwitchCheck, uppSwitchCheck, lowSwitchCheck)
 
 passwordScreenButton.addEventListener("click", () => {
     navigator.clipboard.writeText(passScreen.textContent);
@@ -63,7 +56,7 @@ function generatePassword() {
     }
 
     return result;
-};
+}
 
 function compareRandom(a, b) {
     return Math.random() - 0.5;
@@ -113,12 +106,10 @@ lowSwitch.addEventListener("input", () => {
 
 });
 
-
 function displayPassword() {
     password = generatePassword();
     passScreen.textContent = password;
 }
-
 
 genButton.addEventListener("click", displayPassword);
 
