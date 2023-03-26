@@ -14,6 +14,9 @@ const genButton = document.querySelector('.generate-button');
 const passwordLengthScreen = document.querySelector('.symbols-count-label .count');
 const passwordScreenButton = document.querySelector('.password-screen');
 
+const alertElement = document.querySelector('.alert-label');
+const alertElementLabel = document.querySelector('.alert-label p');
+
 let numSwitchCheck = true;
 let symSwitchCheck = false;
 let uppSwitchCheck = true;
@@ -21,6 +24,11 @@ let lowSwitchCheck = true;
 
 passwordScreenButton.addEventListener("click", () => {
     navigator.clipboard.writeText(passScreen.textContent);
+    alertElementLabel.textContent = 'password copied to clipboard!';
+    alertElement.classList.add('show-element');
+    setTimeout(function () {
+        alertElement.classList.remove('show-element');;
+    }, 2000)
 });
 
 function generatePassword() {
@@ -46,7 +54,6 @@ function generatePassword() {
     for (let i = 0; i < length; i++) {
         result += passwordSymbols[i];
     }
-
 
     return result;
 };
@@ -99,7 +106,14 @@ lowSwitch.addEventListener("input", () => {
 
 });
 
-genButton.addEventListener("click", () => {
+
+function displayPassword() {
     password = generatePassword();
     passScreen.textContent = password;
-});
+}
+
+
+genButton.addEventListener("click", displayPassword);
+
+
+displayPassword();
