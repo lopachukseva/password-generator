@@ -260,7 +260,11 @@ label:active:after {
 /* --- responsive --- */
 
 @media screen and (max-width: 700px) {
-    .f1, .f2, .f3, .f4 {
+
+    .f1,
+    .f2,
+    .f3,
+    .f4 {
         padding-left: 0px;
     }
 
@@ -306,5 +310,10 @@ label:active:after {
         width: 260px;
         height: 130px;
         padding: 60px 0px;
+    }
+
+    .password-screen p {
+        font-size: 1.6em;
+        text-align: center;
     }
 }
